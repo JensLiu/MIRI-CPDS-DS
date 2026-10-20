@@ -1,0 +1,12 @@
+= Failure Models
+- Crash Failure: Process halts and remains halted
+  - Fail-stop crash: other processes can reliably detect its failure
+  - Fail-silent crash: other processes cannot reliably detect its failure
+- Omission Failure: Sent message *NEVER* arrive at the other end
+  - Receive Omission
+  - Send Omission
+- Timing Failure: Process response lies outside a specific time interval
+- Response Failure: Process response it incorrect
+  - Value Failure: the value of the response is wrong
+  - State transition failure: The process deviates from the correct control flow
+- Arbitrary (Byzantine) Failure: Process may arbitrarily omit intended steps or take unintended steps (exhibit differently to different observers)
